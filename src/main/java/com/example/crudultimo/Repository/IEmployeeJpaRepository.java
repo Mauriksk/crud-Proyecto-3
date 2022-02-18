@@ -17,3 +17,4 @@ public interface IEmployeeJpaRepository extends JpaRepository<Employee, Long> {
     //Selecciona todos los campos de la tabla employee donde employeeid='[parametroQueLePasamos]'
     Employee findByEmployeeid(String employeeid);
 }
+
