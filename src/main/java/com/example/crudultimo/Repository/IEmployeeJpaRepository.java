@@ -21,16 +21,17 @@ public interface IEmployeeJpaRepository extends JpaRepository<Employee, Long> {
     Employee findByEmployeeid(String employeeid);
 
     //guarda empleado
-    public Employee save(Employee empleado);
+    //public Employee save(Employee empleado);
 
     //Borra por id
-    public void deleteBuId(Long id);
+    public void deleteById(Long id);
 
     // Buscar por id
     public Optional<Employee> findById(Long id);
 
     //no se que hace
     public Page<Employee> findAll(Pageable pageable);
+
 
     //public Iterable<Employee> findAll();
 }
